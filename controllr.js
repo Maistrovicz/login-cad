@@ -12,3 +12,18 @@ function acessar(){
      window.location.href = 'cadastro.html';
     }
 }
+
+// FUNÇÃO DE CRIAÇÃO DE ARRAY ARMAZENAMENTO DE NOMES
+
+var dadosLista = [];
+
+function salvarUser(){
+    let nomeUser = document.getElementById('nomeUser').
+    value;
+
+    if(nomeUser){
+
+    }else{
+        alert("Favor, informar um nome");
+    }
+}
