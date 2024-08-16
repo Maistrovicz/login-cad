@@ -75,12 +75,12 @@ function criaLista(){
 // FUNÇÃO PARA EXCLUIR NOME DE LISTA
  
 function excluir(i){
-    dadosLista.splice((i - 1), 1);
-    document.getElementById('tabela').deleteRow(i);
+    document.getElementById('nomeUser').value = dadosLista[(i - 1)];
+    dadosLista.splice(dadosLista[(i - 1)], 1);
 }
  
 //  FUNÇÃO PARA EDITAR NOME DA LISTA
 function editar(i){
-    document.getElementById("nomeUser").value = dadosLista[(i - 1)];
-    dadosLista.splice(dadosLista[(i - 1)], 1);
+    dadosLista.splice((i - 1), 1);
+    document.getElementById('tabela').deleteRow(i);
 }
